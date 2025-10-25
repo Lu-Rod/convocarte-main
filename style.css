@@ -1,0 +1,238 @@
+:root{
+  --bg:#0A2A43; --panel:#0F2E4Aee; --text:#F9FAFB; --muted:#D8E3EC;
+  --brand:#F37021; --brand-2:#2D5F91; --accent:#F7C66A; --accent-2:#67A9CF;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+     background:linear-gradient(180deg,#0A2A43,#0B243B 40%,#0A2A43);color:var(--text)}
+a{color:var(--brand);text-decoration:none} a:hover{color:var(--accent-2);text-decoration:underline}
+.container{max-width:1100px;margin:auto;padding:0 20px}
+header{position:sticky;top:0;z-index:50;background:linear-gradient(180deg,rgba(10,42,67,.95),rgba(10,42,67,.65));backdrop-filter:blur(8px);border-bottom:2px solid var(--brand-2)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.3px}
+.logo{height:28px;width:auto;border-radius:6px}
+.brand-badge{width:28px;height:28px;display:grid;place-items:center;background:conic-gradient(from 90deg,var(--brand),var(--accent-2));border-radius:8px;font-weight:800;color:#0A2A43}
+.menu{display:flex;flex-wrap:wrap;gap:14px}
+.menu a{padding:10px 12px;border-radius:12px;color:var(--text)}
+.menu a:hover{background:rgba(103,169,207,.15);color:#fff;outline:2px solid var(--accent-2)}
+.menu a.active{background:var(--brand);color:#0A2A43;outline:none}
+.cta{display:flex;align-items:center;gap:8px}
+.btn{display:inline-flex;align-items:center;gap:8px;border:2px solid var(--brand-2);background:var(--brand);color:#0A2A43;padding:10px 16px;border-radius:14px;font-weight:700}
+.btn:hover{background:linear-gradient(90deg,var(--brand),var(--accent));border-color:var(--accent-2);color:#0A2A43}
+.hero{position:relative;isolation:isolate}
+.hero-media{
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  opacity:.25; /* ajustá opacidad para que no tape el texto */
+  background:url("assets/fondo1.jpg") center/cover no-repeat;
+  filter:contrast(110%);
+}
+
+.hero .container{padding:72px 20px 56px}
+.headline{font-size:clamp(28px,4vw,46px);line-height:1.08;font-weight:900;letter-spacing:.2px;color:var(--accent)}
+.sub{color:var(--muted);max-width:62ch}
+.pill{display:inline-flex;gap:8px;align-items:center;background:var(--brand-2);border:0;padding:8px 12px;border-radius:999px;color:#fff;font-size:.9rem}
+section{padding:64px 0;border-top:1px solid rgba(255,255,255,.07);scroll-margin-top:90px}
+h2{font-size:clamp(20px,3vw,30px);margin:0 0 16px;color:var(--accent-2)}
+p{color:#EEF5FA;line-height:1.75}
+.grid{display:grid;gap:18px}
+.grid.cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.grid.cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.card{background:var(--panel);border:1px solid rgba(103,169,207,.25);border-radius:18px;padding:18px;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.tag{display:inline-block;padding:6px 10px;border:1px solid var(--accent-2);border-radius:999px;color:#fff;font-size:.8rem;background:rgba(103,169,207,.2)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+.thumb{background:var(--panel);border:2px solid rgba(45,95,145,.45);border-radius:16px;overflow:hidden;transition:transform .2s,border-color .2s,box-shadow .2s}
+.thumb:hover{transform:translateY(-2px);border-color:var(--brand);box-shadow:0 10px 22px rgba(0,0,0,.35)}
+.thumb img{width:100%;height:180px;object-fit:cover;display:block;filter:saturate(105%)}
+.thumb .meta{padding:12px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 16px}
+.filters select{background:#0D2A45;color:var(--text);border:1px solid var(--accent-2);border-radius:10px;padding:8px}
+.yt{position:relative;width:100%;aspect-ratio:16/9;border-radius:12px;overflow:hidden;border:2px solid var(--brand-2)}
+iframe{width:100%;height:100%}
+.timeline{border-left:4px solid var(--brand);margin-left:8px;padding-left:18px}
+.timeline .item{margin:18px 0}
+.kpi{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.kpi .card{display:flex;flex-direction:column;gap:6px;background:linear-gradient(180deg,var(--brand-2),#1E466D);color:#fff}
+.kpi .val{font-size:28px;font-weight:800;color:var(--accent);text-shadow:0 1px 2px rgba(0,0,0,.35)}
+form{display:grid;gap:10px}
+input, textarea{background:#0D2A45;color:var(--text);border:1px solid var(--accent-2);border-radius:12px;padding:12px}
+label{font-size:.95rem;color:#EEF5FA}
+footer{padding:28px 0;color:var(--accent-2);border-top:2px solid var(--brand-2)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.flex{display:flex;gap:12px;align-items:center}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.map{height:260px;background:#0D2A45;border:2px solid var(--brand-2);border-radius:12px;display:grid;place-items:center;color:#AECFE7}
+@media (max-width:900px){.grid.cols-3{grid-template-columns:1fr 1fr}.kpi{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.grid.cols-2,.grid.cols-3{grid-template-columns:1fr}}
+
+/* === Header & Brand === */
+.nav{
+  display:flex; align-items:center; gap:16px; padding:12px 0;
+}
+.brand{
+  display:flex; align-items:center; gap:10px; flex:0 0 auto;
+}
+.logo{
+  height:50px; width:auto; display:block;
+}
+.brand-name{
+  font-size:1.35rem;   /* ↑ tamaño del texto del nombre */
+  font-weight:800; 
+  letter-spacing:.2px;
+  color:var(--text);
+}
+/* oculto la estrellita si quedara en el DOM por error */
+.brand-badge{ display:none !important; }
+
+/* === Menú centrado y con menos padding para que entre todo === */
+.menu{
+  display:flex; flex:1 1 auto; justify-content:center; flex-wrap:wrap; gap:10px;
+  min-width:0;
+}
+.menu a{
+  padding:8px 10px;     /* más compacto */
+  font-size:0.98rem;
+  white-space:nowrap;
+}
+
+/* === CTA compacta, pegada a la derecha === */
+.cta{
+  display:flex; gap:8px; align-items:center; flex:0 0 auto; margin-left:auto;
+}
+.btn-compact{
+  padding:15px 17px;     /* más chica */
+  font-size:0.92rem;
+  border-width:1.5px;
+  line-height:1;
+}
+
+/* Responsive ajustes */
+@media (max-width: 960px){
+  .brand-name{ font-size:1.15rem; }
+  .menu a{ padding:6px 8px; font-size:0.95rem; }
+  .logo{ height:32px; }
+  .btn-compact{ padding:6px 8px; font-size:0.9rem; }
+}
+@media (max-width: 720px){
+  .menu{ justify-content:flex-start; }
+  .brand-name{ display:none; } /* opcional: ocultar texto */
+}
+
+/* Ajustes header */
+.logo{
+  height:50px;
+  width:auto;
+  display:block;
+}
+.menu{
+  flex:1 1 auto;
+  justify-content:center;
+  flex-wrap:nowrap;   /* que no se corte en dos filas */
+  gap:8px;
+}
+.menu a{
+  padding:6px 8px;
+  font-size:0.95rem;
+  white-space:nowrap; /* evita que se parta en dos */
+}
+.btn-compact{
+  padding:4px 8px;
+  font-size:0.85rem;
+}
+/* --- Header full-bleed y extremos --- */
+header .container{
+  max-width: 100%;      /* quita el límite de 1100px solo en el header */
+  width: 100%;
+  padding: 0 16px;      /* margen interno a gusto (bordes) */
+}
+
+/* distribuye: izquierda (brand) — centro (menu) — derecha (cta) */
+.nav{
+  justify-content: space-between;  /* 🔑 logo a la izq., botones a la der. */
+}
+
+/* el menú ocupa el espacio central, en 1 sola línea */
+.menu{
+  flex: 1 1 auto;
+  justify-content: center;
+  flex-wrap: nowrap;     /* evita que baje a 2 líneas */
+  gap: 10px;
+  min-width: 0;
+  overflow-x: auto;      /* si igual no entra, permite scroll horizontal */
+}
+
+/* compactar un toque para ganar ancho */
+.menu a{
+  padding: 6px 8px;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+/* la botonera bien a la derecha, compacta */
+.cta{
+  margin-left: 0;        /* con space-between ya no hace falta empujar */
+}
+.btn-compact{
+  padding: 4px 8px;
+  font-size: 0.85rem;
+}
+
+/* logo más grande (ajustá a gusto) */
+.logo{
+  height: 56px;          /* probá 56–64px si querés aún más presencia */
+  width: auto;
+}
+
+/* responsive finito por si el menú es muy largo */
+@media (max-width: 980px){
+  .brand-name{ font-size: 1.15rem; }
+  .logo{ height: 48px; }
+  .menu a{ padding: 5px 7px; font-size: 0.93rem; }
+}
+@media (max-width: 760px){
+  .brand-name{ display:none; }    /* opcional: ocultar texto para ganar espacio */
+}
+
+/* Hero ocupa siempre la altura completa de la ventana */
+.hero {
+  min-height: 100vh;         /* 100% de la altura visible */
+  display: flex;
+  align-items: center;       /* centra verticalmente el contenido */
+}
+.hero .container{
+  padding: 0 20px;           /* solo padding lateral */
+}
+/* Hero en dos columnas */
+.hero-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr; /* izquierda texto / derecha logo */
+  align-items:center;
+  gap:40px;
+  min-height:100vh;  /* ocupa pantalla completa */
+}
+
+.hero-left{
+  text-align:left;
+}
+
+.hero-right{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.hero-logo{
+  max-width: 320px;   /* ajustá tamaño a gusto */
+  height:auto;
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.4));
+}
+
+/* Responsive: en pantallas chicas se apila */
+@media (max-width:900px){
+  .hero-grid{
+    grid-template-columns: 1fr;
+    text-align:center;
+  }
+  .hero-right{ margin-top:20px; }
+}

@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> Convocarte · CeRP Suroeste</title>
+  <meta name="description" content="Convocarte: espacio expositivo del CeRP Suroeste. Gestión cultural, arte y educación, con galería virtual, formación y eventos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+  <a href="#inicio" class="sr-only">Saltar al contenido</a>
+  <header aria-label="Barra de navegación">
+  <div class="container nav">
+    <div class="brand" aria-label="Convocarte · CeRP SW">
+      <!-- Usá tu archivo recién subido: guardalo como assets/logo.png -->
+      <img src="assets/assetslogo.png" alt="Logo Convocarte" class="logo" />
+      <span class="brand-name">Convocarte · CeRP SW</span>
+    </div>
+
+    <nav class="menu" aria-label="Secciones del sitio">
+      <a href="#inicio">Inicio</a>
+      <a href="#que-es">¿Qué es?</a>
+      <a href="#galeria">Galería</a>
+      <a href="#formacion">Formación</a>
+      <a href="#eventos">Eventos</a>
+      <a href="#bitacora">Bitácora</a>
+      <a href="#impacto">Impacto</a>
+      <a href="#alianzas">Alianzas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="cta">
+      <button id="langBtn" class="btn btn-compact" aria-label="Cambiar idioma">🌐</button>
+      <a class="btn btn-compact" href="#newsletter" title="Newsletter">📬</a>
+    </div>
+  </div>
+</header>
+
+
+  <main id="inicio" class="hero" tabindex="-1">
+  <div class="hero-media" aria-hidden="true"></div>
+  <div class="container hero-grid">
+    <div class="hero-left">
+      <div class="pill">"El arte como vínculo, aprendizaje y comunidad"</div>
+      <h1 class="headline" data-i18n="headline">Galería a Cielo Abierto · Convocarte</h1>
+      <p class="sub">
+        Brindamos visibilidad, continuidad y proyección al espacio expositivo
+        “Convocarte”, promoviendo la gestión cultural, el arte y la educación
+        desde el CeRP SW, conectando con la comunidad y otras instituciones
+        de la Región.
+      </p>
+      <div class="flex" style="margin-top:16px">
+        <a class="btn" href="#proxima-expo">🗓️ Próxima exposición</a>
+        <a class="btn" href="#galeria">🎨 Recorrer galería</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <!-- Imagen/logo de Convocarte -->
+      <img src="assets/assetslogo.png" alt="Logo Convocarte" class="hero-logo" />
+    </div>
+  </div>
+</main>
+
+
+  <section id="que-es" aria-label="Convocarte: ¿Qué es?">
+    <div class="container grid cols-2">
+      <div class="card">
+        <h2>Convocarte: ¿Qué es?</h2>
+        <p>Convocarte es un proyecto expositivo y formativo del CeRP Suroeste que integra arte, educación y comunidad. Nace inspirado por el Festival de Ilustración e’a! y otras experiencias de gestión cultural, y se materializa en una galería a cielo abierto construida con la participación de estudiantes y docentes.</p>
+        <div class="chips">
+          <span class="tag">Historia</span>
+          <span class="tag">Objetivos</span>
+          <span class="tag">Inspiración e’a!</span>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <strong>Objetivo general</strong>
+          <p>Promover la gestión cultural, el arte y la educación desde el CeRP SW, conectando con la comunidad y con instituciones de la Región.</p>
+        </div>
+        <div class="card">
+          <strong>Proceso de construcción</strong>
+          <p>Incluye diseño colaborativo, montaje de módulos expositivos y acciones educativas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" aria-label="Galería Virtual">
+    <div class="container">
+      <h2>Galería Virtual</h2>
+      <p>Explorá imagenes y videos de distintas ediciones. Filtrá por año, artista, técnica o temática.</p>
+      <div class="filters" aria-label="Filtros de galería">
+        <select id="filtro-anio" aria-label="Filtrar por año">
+          <option value="">Año</option>
+          <option>2025</option>
+          <option>2024</option>
+        </select>
+        <select id="filtro-artista" aria-label="Filtrar por artista">
+          <option value="">Artista</option>
+          <option>Julia Rouaux</option>
+          <option>José Diniz</option>
+        </select>
+        <select id="filtro-tecnica" aria-label="Filtrar por técnica">
+          <option value="">Técnica</option>
+          <option>Ilustración</option>
+          <option>Fotografía</option>
+          <option>Pintura</option>
+        </select>
+        <select id="filtro-archivo" aria-label="Filtrar por tipo de archivo">
+          <option value="">Archivo</option>
+          <option>Imagen</option>
+          <option>Video</option>
+        </select>
+      </div> 
+      <div class="gallery" id="gallery"> <!-- INICIO Julia Rouaux 2025(linea abajo)-->
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Imagen" aria-label="Obra 1">
+          <img src="imagenes_convocarte\Julia_Rouaux_2025\JR20250.jpg" alt="Invitación a la exposición Tramas Infinitas" />
+          <div class="meta">
+            <strong>Invitación a la exposición Tramas Infinitas</strong>
+            <p class="muted">Julia Rouaux · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>-</p>
+            </details>
+          </div>
+        </article><!-- Fin -->
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Imagen" aria-label="Obra 1">
+          <img src="imagenes_convocarte\Julia_Rouaux_2025\JR20251.jpg" alt="Escolares viendo la exposición sobre fauna terrestre en interiores con guias" />
+          <div class="meta">
+            <strong>Foto de la exposición Tramas Infinitas</strong>
+            <p class="muted">Julia Rouaux · Ilustración · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>Técnica mixta sobre madera</p>
+            </details>
+          </div>
+        </article><!-- Fin -->
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Imagen" aria-label="Obra 1">
+          <img src="imagenes_convocarte\Julia_Rouaux_2025\JR20252.jpg" alt="Escolares viendo la exposición sobre fauna terrestre en interiores con guias" />
+          <div class="meta">
+            <strong>Foto de la exposición Tramas Infinitas</strong>
+            <p class="muted">Julia Rouaux · Ilustración · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>Técnica mixta sobre madera</p>
+            </details>
+          </div>
+        </article><!-- Fin -->
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Imagen" aria-label="Obra 1">
+          <img src="imagenes_convocarte\Julia_Rouaux_2025\JR20253.jpg" alt="Escolares viendo la exposición sobre fauna terrestre en interiores con guias" />
+          <div class="meta">
+            <strong>Foto de la exposición Tramas Infinitas</strong>
+            <p class="muted">Julia Rouaux · Ilustración · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>Técnica mixta sobre madera</p>
+            </details>
+          </div>
+        </article><!-- Fin -->
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Imagen" aria-label="Obra 1">
+          <img src="imagenes_convocarte\Julia_Rouaux_2025\JR20254.jpg" alt="Escolares viendo la exposición sobre fauna marina en interiores con guias" />
+          <div class="meta">
+            <strong>Foto de la exposición Tramas Infinitas</strong>
+            <p class="muted">Julia Rouaux · Ilustración · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>-</p>
+            </details>
+          </div>
+        </article><!-- Fin -->
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Imagen" aria-label="Obra 1">
+          <img src="imagenes_convocarte\Julia_Rouaux_2025\JR20255.jpg" alt="Escolares viendo la exposición sobre fauna marina en interiores con guias" />
+          <div class="meta">
+            <strong>Foto de la exposición Tramas Infinitas</strong>
+            <p class="muted">Julia Rouaux · Ilustración · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>Técnica mixta sobre soporte modular. 80×120 cm.</p>
+            </details>
+          </div>
+        </article><!-- Fin -->
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Imagen" aria-label="Obra 1">
+          <img src="imagenes_convocarte\Julia_Rouaux_2025\JR20256.jpg" alt="Escolares viendo la exposición sobre fauna marina en interiores con guias" />
+          <div class="meta">
+            <strong>Foto de la exposición Tramas Infinitas</strong>
+            <p class="muted">Julia Rouaux · Ilustración · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>-</p>
+            </details>
+          </div>
+        </article><!-- Fin -->
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Imagen" aria-label="Obra 1">
+          <img src="imagenes_convocarte\Julia_Rouaux_2025\JR20257.jpg" alt="Escolares viendo la exposición sobre fauna terrestre en exteriores con guias" />
+          <div class="meta">
+            <strong>Foto de la exposición Tramas Infinitas</strong>
+            <p class="muted">Julia Rouaux · Ilustración · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>-</p>
+            </details>
+          </div>
+        </article><!-- Fin -->
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Imagen" aria-label="Obra 1">
+          <img src="imagenes_convocarte\Julia_Rouaux_2025\JR20258.jpg" alt="Escolares viendo la exposición sobre fauna terrestre en interiores con guias" />
+          <div class="meta">
+            <strong>Foto de la exposición Tramas Infinitas</strong>
+            <p class="muted">Julia Rouaux · Ilustración · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>Técnica mixta sobre madera</p>
+            </details>
+          </div>
+        </article><!-- Fin -->
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Imagen" aria-label="Obra 1">
+          <img src="imagenes_convocarte\Julia_Rouaux_2025\JR20259.jpg" alt="Escolares recibiendo introducción a la exposición interna sobre fauna terrestre" />
+          <div class="meta">
+            <strong>Foto de la exposición Tramas Infinitas</strong>
+            <p class="muted">Julia Rouaux · Ilustración · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>-</p>
+            </details>
+          </div>
+        </article><!-- Fin -->
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Imagen" aria-label="Obra 1">
+          <img src="imagenes_convocarte\Julia_Rouaux_2025\JR202510.jpg" alt="Escolares recibiendo introducción a la exposición interna sobre fauna terrestre" />
+          <div class="meta">
+            <strong>Foto de la exposición Tramas Infinitas</strong>
+            <p class="muted">Julia Rouaux · Ilustración · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>Técnica mixta sobre madera</p>
+            </details>
+          </div>
+        </article><!-- Fin -->
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Imagen" aria-label="Obra 1">
+          <img src="imagenes_convocarte\Julia_Rouaux_2025\JR202511.jpg" alt="Escolares recibiendo introducción a la exposición exterior sobre fauna marina" />
+          <div class="meta">
+            <strong>Foto de la exposición Tramas Infinitas</strong>
+            <p class="muted">Julia Rouaux · Ilustración · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>Técnica mixta sobre soporte modular. 80×120 cm.</p>
+            </details>
+          </div>
+        </article><!-- Fin -->
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Imagen" aria-label="Obra 1">
+          <img src="imagenes_convocarte\Julia_Rouaux_2025\JR202512.jpg" alt="Escolares en actiivdad con estudiantes del profesorado de biologia" />
+          <div class="meta">
+            <strong>Foto de la exposición Tramas Infinitas</strong>
+            <p class="muted">Julia Rouaux · Ilustración · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>-</p>
+            </details>
+          </div>
+        </article><!-- Fin -->
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Imagen" aria-label="Obra 1">
+          <img src="imagenes_convocarte\Julia_Rouaux_2025\JR202513.jpg" alt="Escolares en actiivdad con estudiantes del profesorado de biologia" />
+          <div class="meta">
+            <strong>Foto de la exposición Tramas Infinitas</strong>
+            <p class="muted">Julia Rouaux · Ilustración · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>-</p>
+            </details>
+          </div>
+        </article><!-- Fin -->
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Imagen" aria-label="Obra 1">
+          <img src="imagenes_convocarte\Julia_Rouaux_2025\JR202514.jpg" alt="Escolares en actiivdad con estudiantes del profesorado de biologia" />
+          <div class="meta">
+            <strong>Foto de la exposición Tramas Infinitas</strong>
+            <p class="muted">Julia Rouaux · Ilustración · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>-</p>
+            </details>
+          </div>
+        </article>
+        <!--Videos-->
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Video" aria-label="Obra 1">
+          <video controls preload="metadata" width="100%">
+            <source src="imagenes_convocarte\Julia_Rouaux_2025\Videos_JR_2025\VIDJR20251.mp4" type="video/mp4">
+            
+          </video>
+          <div class="meta">
+            <strong>Video de la exposición</strong>
+            <p class="muted">Julia Rouaux · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p></p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Video" aria-label="Obra 1">
+          <video controls preload="metadata" width="100%">
+            <source src="imagenes_convocarte\Julia_Rouaux_2025\Videos_JR_2025\VIDJR20252.mp4" type="video/mp4">
+            
+          </video>
+          <div class="meta">
+            <strong>Video de la exposición</strong>
+            <p class="muted">Julia Rouaux · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p></p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Video" aria-label="Obra 1">
+          <video controls preload="metadata" width="100%">
+            <source src="imagenes_convocarte\Julia_Rouaux_2025\Videos_JR_2025\VIDJR20253.mp4" type="video/mp4">
+            
+          </video>
+          <div class="meta">
+            <strong>Video de la exposición</strong>
+            <p class="muted">Julia Rouaux · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p></p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Video" aria-label="Obra 1">
+          <video controls preload="metadata" width="100%">
+            <source src="imagenes_convocarte\Julia_Rouaux_2025\Videos_JR_2025\VIDJR20253.mp4" type="video/mp4">
+            
+          </video>
+          <div class="meta">
+            <strong>Video de la exposición</strong>
+            <p class="muted">Julia Rouaux · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p></p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Video" aria-label="Obra 1">
+          <video controls preload="metadata" width="100%">
+            <source src="imagenes_convocarte\Julia_Rouaux_2025\Videos_JR_2025\VIDJR20254.mp4" type="video/mp4">
+            
+          </video>
+          <div class="meta">
+            <strong>Video de la exposición</strong>
+            <p class="muted">Julia Rouaux · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p></p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Video" aria-label="Obra 1">
+          <video controls preload="metadata" width="100%">
+            <source src="imagenes_convocarte\Julia_Rouaux_2025\Videos_JR_2025\VIDJR20255.mp4" type="video/mp4">
+            
+          </video>
+          <div class="meta">
+            <strong>Video de la exposición</strong>
+            <p class="muted">Julia Rouaux · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p></p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Video" aria-label="Obra 1">
+          <video controls preload="metadata" width="100%">
+            <source src="imagenes_convocarte\Julia_Rouaux_2025\Videos_JR_2025\VIDJR20256.mp4" type="video/mp4">
+            
+          </video>
+          <div class="meta">
+            <strong>Video de la exposición</strong>
+            <p class="muted">Julia Rouaux · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p></p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Video" aria-label="Obra 1">
+          <video controls preload="metadata" width="100%">
+            <source src="imagenes_convocarte\Julia_Rouaux_2025\Videos_JR_2025\VIDJR20257.mp4" type="video/mp4">
+            
+          </video>
+          <div class="meta">
+            <strong>Video de la exposición</strong>
+            <p class="muted">Julia Rouaux · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p></p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Video" aria-label="Obra 1">
+          <video controls preload="metadata" width="100%">
+            <source src="imagenes_convocarte\Julia_Rouaux_2025\Videos_JR_2025\VIDJR20258.mp4" type="video/mp4">
+            
+          </video>
+          <div class="meta">
+            <strong>Video de la exposición</strong>
+            <p class="muted">Julia Rouaux · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p></p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Video" aria-label="Obra 1">
+          <video controls preload="metadata" width="100%">
+            <source src="imagenes_convocarte\Julia_Rouaux_2025\Videos_JR_2025\VIDJR20259.mp4" type="video/mp4">
+            
+          </video>
+          <div class="meta">
+            <strong>Video de la exposición</strong>
+            <p class="muted">Julia Rouaux · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p></p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Video" aria-label="Obra 1">
+          <video controls preload="metadata" width="100%">
+            <source src="imagenes_convocarte\Julia_Rouaux_2025\Videos_JR_2025\VIDJR202510.mp4" type="video/mp4">
+            
+          </video>
+          <div class="meta">
+            <strong>Video de la exposición</strong>
+            <p class="muted">Julia Rouaux · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p></p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Video" aria-label="Obra 1">
+          <video controls preload="metadata" width="100%">
+            <source src="imagenes_convocarte\Julia_Rouaux_2025\Videos_JR_2025\VIDJR202511.mp4" type="video/mp4">
+            
+          </video>
+          <div class="meta">
+            <strong>Video de la exposición</strong>
+            <p class="muted">Julia Rouaux · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p></p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Video" aria-label="Obra 1">
+          <video controls preload="metadata" width="100%">
+            <source src="imagenes_convocarte\Julia_Rouaux_2025\Videos_JR_2025\VIDJR202512.mp4" type="video/mp4">
+            
+          </video>
+          <div class="meta">
+            <strong>Video de la exposición</strong>
+            <p class="muted">Julia Rouaux · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p></p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Video" aria-label="Obra 1">
+          <video controls preload="metadata" width="100%">
+            <source src="imagenes_convocarte\Julia_Rouaux_2025\Videos_JR_2025\VIDJR202513.mp4" type="video/mp4">
+            
+          </video>
+          <div class="meta">
+            <strong>Video de la exposición</strong>
+            <p class="muted">Julia Rouaux · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p></p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Video" aria-label="Obra 1">
+          <video controls preload="metadata" width="100%">
+            <source src="imagenes_convocarte\Julia_Rouaux_2025\Videos_JR_2025\VIDJR202514.mp4" type="video/mp4">
+            
+          </video>
+          <div class="meta">
+            <strong>Video de la exposición</strong>
+            <p class="muted">Julia Rouaux · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p></p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Video" aria-label="Obra 1">
+          <video controls preload="metadata" width="100%">
+            <source src="imagenes_convocarte\Julia_Rouaux_2025\Videos_JR_2025\VIDJR202515.mp4" type="video/mp4">
+            
+          </video>
+          <div class="meta">
+            <strong>Video de la exposición</strong>
+            <p class="muted">Julia Rouaux · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p></p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Video" aria-label="Obra 1">
+          <video controls preload="metadata" width="100%">
+            <source src="imagenes_convocarte\Julia_Rouaux_2025\Videos_JR_2025\VIDJR202516.mp4" type="video/mp4">
+            
+          </video>
+          <div class="meta">
+            <strong>Video de la exposición</strong>
+            <p class="muted">Julia Rouaux · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p></p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Video" aria-label="Obra 1">
+          <video controls preload="metadata" width="100%">
+            <source src="imagenes_convocarte\Julia_Rouaux_2025\Videos_JR_2025\VIDJR202517.mp4" type="video/mp4">
+            
+          </video>
+          <div class="meta">
+            <strong>Video de la exposición</strong>
+            <p class="muted">Julia Rouaux · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p></p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2025" data-artista="Julia Rouaux" data-tecnica="Ilustración" data-archivo="Video" aria-label="Obra 1">
+          <video controls preload="metadata" width="100%">
+            <source src="imagenes_convocarte\Julia_Rouaux_2025\Videos_JR_2025\VIDJR202518.mp4" type="video/mp4">
+            
+          </video>
+          <div class="meta">
+            <strong>Video de la exposición</strong>
+            <p class="muted">Julia Rouaux · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p></p>
+            </details>
+          </div>
+        </article>
+        <!-- Fin Video -->
+        
+        <!-- Fin  Julia Rouaux 2025 -->
+        <!-- Inicio  Jose Diniz 2025 -->
+        <article class="thumb" data-anio="2025" data-artista="José Diniz" data-tecnica="Fotografía" data-archivo="Imagen" aria-label="Obra 2">
+          <img src="imagenes_convocarte\Jose_Diniz_2025\JD20250.jpg" alt="Invitación a muestra de Jose Diniz Paubrasilia" />
+          <div class="meta">
+            <strong>Invitación a la exposición Paubrasilia</strong>
+            <p class="muted">José Diniz · Fotografía · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>Serie fotográfica, impresión giclée.</p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2025" data-artista="José Diniz" data-tecnica="Fotografía" data-archivo="Imagen" aria-label="Obra 2">
+          <img src="imagenes_convocarte\Jose_Diniz_2025\JD20251.jpg" alt="Fotografía de explicación de la muestra Paubrasilia " />
+          <div class="meta">
+            <strong>Fotografía de las obras de Paubrasilia</strong>
+            <p class="muted">José Diniz · Fotografía · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>Serie fotográfica, impresión giclée.</p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2025" data-artista="José Diniz" data-tecnica="Fotografía" data-archivo="Imagen" aria-label="Obra 2">
+          <img src="imagenes_convocarte\Jose_Diniz_2025\JD20252.jpg" alt="Fotografía de las obras de Paubrasilia" />
+          <div class="meta">
+            <strong>Fotografía de las obras de Paubrasilia</strong>
+            <p class="muted">José Diniz · Fotografía · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>Serie fotográfica, impresión giclée.</p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2025" data-artista="José Diniz" data-tecnica="Fotografía" data-archivo="Imagen" aria-label="Obra 2">
+          <img src="imagenes_convocarte\Jose_Diniz_2025\JD20253.jpg" alt="Fotografía de las obras de Paubrasilia" />
+          <div class="meta">
+            <strong>Fotografía de las obras de Paubrasilia</strong>
+            <p class="muted">José Diniz · Fotografía · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>Serie fotográfica, impresión giclée.</p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2025" data-artista="José Diniz" data-tecnica="Fotografía" data-archivo="Imagen" aria-label="Obra 2">
+          <img src="imagenes_convocarte\Jose_Diniz_2025\JD20254.jpg" alt="Fotografía de las obras de Paubrasilia" />
+          <div class="meta">
+            <strong>Fotografía de las obras de Paubrasilia</strong>
+            <p class="muted">José Diniz · Fotografía · 2025</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>Serie fotográfica, impresión giclée.</p>
+            </details>
+          </div>
+        </article>
+        <!-- Fin  Jose Diniz 2025 -->
+        <!-- INICIO Julia Rouaux 2024 -->
+        <article class="thumb" data-anio="2024" data-artista="Julia Rouaux" data-tecnica="Pintura" data-archivo="Imagen" aria-label="Obra 3">
+          <img src="imagenes_convocarte\Julia_Rouaux_2024\JR20240.jpg" alt="Banner Espacio Convocarte - Ilustración cientifica" />
+          <div class="meta">
+            <strong>Espacio Convocarte - Ilustración cientifia</strong>
+            <p class="muted">Julia Rouaux · 2024</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>-</p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2024" data-artista="Julia Rouaux" data-tecnica="Pintura" data-archivo="Imagen" aria-label="Obra 3">
+          <img src="imagenes_convocarte\Julia_Rouaux_2024\JR20241.jpg" alt="Ignauguración Espacio Convocarte" />
+          <div class="meta">
+            <strong>Ignauguración Espacio Convocarte</strong>
+            <p class="muted">Julia Rouaux · 2024</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>-</p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2024" data-artista="Julia Rouaux" data-tecnica="Pintura" data-archivo="Imagen" aria-label="Obra 3">
+          <img src="imagenes_convocarte\Julia_Rouaux_2024\JR20242.jpg" alt="Ignauguración Espacio Convocarte" />
+          <div class="meta">
+            <strong>Ignauguración Espacio Convocarte</strong>
+            <p class="muted">Julia Rouaux · 2024</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>-</p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2024" data-artista="Julia Rouaux" data-tecnica="Pintura" data-archivo="Imagen" aria-label="Obra 3">
+          <img src="imagenes_convocarte\Julia_Rouaux_2024\JR20243.jpg" alt="Ignauguración Espacio Convocarte" />
+          <div class="meta">
+            <strong>Ignauguración Espacio Convocarte</strong>
+            <p class="muted">Julia Rouaux · 2024</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>-</p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2024" data-artista="Julia Rouaux" data-tecnica="Pintura" data-archivo="Imagen" aria-label="Obra 3">
+          <img src="imagenes_convocarte\Julia_Rouaux_2024\JR20244.jpg" alt="Ignauguración Espacio Convocarte" />
+          <div class="meta">
+            <strong>Ignauguración Espacio Convocarte</strong>
+            <p class="muted">Julia Rouaux · 2024</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>-</p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2024" data-artista="Julia Rouaux" data-tecnica="Pintura" data-archivo="Imagen" aria-label="Obra 3">
+          <img src="imagenes_convocarte\Julia_Rouaux_2024\JR20245.jpg" alt="Ignauguración Espacio Convocarte" />
+          <div class="meta">
+            <strong>Ignauguración Espacio Convocarte</strong>
+            <p class="muted">Julia Rouaux · 2024</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>-</p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2024" data-artista="Julia Rouaux" data-tecnica="Pintura" data-archivo="Imagen" aria-label="Obra 3">
+          <img src="imagenes_convocarte\Julia_Rouaux_2024\JR20246.jpg" alt="Ignauguración Espacio Convocarte" />
+          <div class="meta">
+            <strong>Ignauguración Espacio Convocarte</strong>
+            <p class="muted">Julia Rouaux · 2024</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>-</p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2024" data-artista="Julia Rouaux" data-tecnica="Pintura" data-archivo="Imagen" aria-label="Obra 3">
+          <img src="imagenes_convocarte\Julia_Rouaux_2024\JR20247.jpg" alt="Ignauguración Espacio Convocarte" />
+          <div class="meta">
+            <strong>Ignauguración Espacio Convocarte</strong>
+            <p class="muted">Julia Rouaux · 2024</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>-</p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2024" data-artista="Julia Rouaux" data-tecnica="Pintura" data-archivo="Imagen" aria-label="Obra 3">
+          <img src="imagenes_convocarte\Julia_Rouaux_2024\JR20248.jpg" alt="Ignauguración Espacio Convocarte" />
+          <div class="meta">
+            <strong>Ignauguración Espacio Convocarte</strong>
+            <p class="muted">Julia Rouaux · 2024</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>-</p>
+            </details>
+          </div>
+        </article>
+        <article class="thumb" data-anio="2024" data-artista="Julia Rouaux" data-tecnica="Pintura" data-archivo="Imagen" aria-label="Obra 3">
+          <img src="imagenes_convocarte\Julia_Rouaux_2024\JR20249.jpg" alt="Ignauguración Espacio Convocarte" />
+          <div class="meta">
+            <strong>Ignauguración Espacio Convocarte</strong>
+            <p class="muted">Julia Rouaux · 2024</p>
+            <details>
+              <summary>Ficha técnica</summary>
+              <p>-</p>
+            </details>
+          </div>
+        </article>
+        <!-- Fin Julia Rouaux 2024 -->
+      </div>
+    </div>
+  </section>
+
+  <section id="formacion" aria-label="Formación y Voluntariado">
+    <div class="container grid cols-2">
+      <div>
+        <h2>Formación y Voluntariado</h2>
+        <p>Programa de Formación en Gestión Cultural con módulos dictados por docentes invitados. Incluye experiencias de voluntariado, testimonios y repositorio descargable de materiales.</p>
+        <div class="grid cols-2">
+          <div class="card">
+            <strong>Módulos</strong>
+            <ul>
+              <li>Introducción a la gestión cultural</li>
+              <li>Curaduría y montaje</li>
+              <li>Comunicación y registro</li>
+            </ul>
+          </div>
+          <div class="card">
+            <strong>Inscripción</strong>
+            <p>Próximas ediciones: <a href="#" aria-label="Formulario de inscripción">formulario</a></p>
+          </div>
+        </div>
+        <div class="grid" style="margin-top:12px">
+          <div class="yt"><iframe src="https://www.youtube.com/embed/a_5CE02rNgU" title="Video 1 formación" frameborder="0" allowfullscreen></iframe></div>
+          <div class="yt"><iframe src="https://www.youtube.com/embed/n-M_2i9i2cY" title="Video 2 formación" frameborder="0" allowfullscreen></iframe></div>
+          <div class="yt"><iframe src="https://www.youtube.com/embed/05yfANtiL6M?start=255" title="Video 3 formación" frameborder="0" allowfullscreen></iframe></div>
+        </div>
+      </div>
+      <aside class="card">
+        <strong>Testimonios</strong>
+        <p>“Participar en Convocarte me permitió comprender el rol de la gestión cultural en el territorio.”</p>
+        <p>“La galería a cielo abierto nos conectó con liceos y escuelas de la región.”</p>
+        <a class="btn" href="#repositorio">📚 Repositorio</a>
+      </aside>
+    </div>
+  </section>
+
+  <section id="eventos" aria-label="Eventos">
+    <div class="container">
+      <h2>Eventos</h2>
+      <div id="proxima-expo" class="card">
+        <div class="flex" style="justify-content:space-between;align-items:baseline">
+          <div>
+            <strong>Próxima exposición</strong>
+            <p class="muted">Muestras, talleres, charlas y visitas guiadas.</p>
+          </div>
+          <a class="btn" href="#" aria-label="Formulario de inscripción a actividades">Inscribirme</a>
+        </div>
+      </div>
+      <div class="grid cols-3" style="margin-top:12px">
+        <div class="card"><strong>Festival e’a!</strong><p>Agenda y actividades vinculadas al festival.</p></div>
+        <div class="card"><strong>Charlas</strong><p>Docentes invitados y gestores culturales.</p></div>
+        <div class="card"><strong>Visitas educativas</strong><p>Información para instituciones: agendá tu visita.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bitacora" aria-label="Bitácora del proyecto">
+    <div class="container grid cols-2">
+      <div>
+        <h2>Bitácora del proyecto</h2>
+        <div class="timeline">
+          <div class="item"><strong>2023</strong><p>Inicio del proyecto y diseño de la galería.</p></div>
+          <div class="item"><strong>2024</strong><p>Montaje de módulos y primeras muestras.</p></div>
+          <div class="item"><strong>2025</strong><p>Expansión regional y nuevas alianzas.</p></div>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="card">Fotografías del montaje (agregar álbum)</div>
+        <div class="card">Videos 360° de recorridos (agregar enlaces)</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="impacto" aria-label="Impacto y Comunidad">
+    <div class="container">
+      <h2>Impacto y Comunidad</h2>
+      <p>Resultados e impacto en estudiantes y comunidad educativa. Acciones interdisciplinarias (Biología, etc.) y mapa de instituciones vinculadas.</p>
+      <div class="kpi">
+        <div class="card"><div class="val">0</div><div>Artistas participantes</div></div>
+        <div class="card"><div class="val">0</div><div>Instituciones aliadas</div></div>
+        <div class="card"><div class="val">0</div><div>Visitantes</div></div>
+        <div class="card"><div class="val">0</div><div>Muestras anuales</div></div>
+      </div>
+      <div class="map" role="img" aria-label="Mapa ilustrativo de instituciones vinculadas">Mapa de instituciones (embed real a definir)</div>
+      <div class="chips" style="margin-top:10px">
+        <span class="tag">Liceos</span>
+        <span class="tag">Escuelas</span>
+        <span class="tag">IFDs</span>
+        <span class="tag">Polo Educativo</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="alianzas" aria-label="Proyección y Alianzas">
+    <div class="container grid cols-2">
+      <div class="card">
+        <h2>Proyección y Alianzas</h2>
+        <p>Futuro del espacio Convocarte, acuerdos con el CdF de Montevideo, articulación con el Polo Educativo y posibilidades de colaboración o curaduría externa.</p>
+      </div>
+      <div class="card">
+        <strong>¿Querés colaborar?</strong>
+        <p>Escribinos para coordinar propuestas de curaduría, talleres o muestras.</p>
+        <a class="btn" href="#contacto">🤝 Proponer alianza</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="newsletter" aria-label="Newsletter">
+    <div class="container grid cols-2">
+      <div>
+        <h2>Suscribite al newsletter</h2>
+        <p>Recibí novedades sobre exposiciones y actividades.</p>
+        <form name="newsletter" method="post" data-netlify="true" onsubmit="this.reset();alert('¡Gracias por suscribirte!');return false" aria-label="Formulario de newsletter">
+          <label for="nl-email">Correo electrónico</label>
+          <input id="nl-email" name="email" type="email" placeholder="tu@correo.edu.uy" required />
+          <button class="btn" type="submit">Suscribirme</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <strong>Privacidad y accesibilidad</strong>
+        <p>Versión accesible compatible con lectores de pantalla, contraste adecuado y navegación por teclado.</p>
+        <label class="flex" style="margin-top:6px"><input type="checkbox" id="contrastToggle"/> Alto contraste</label>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" aria-label="Contacto">
+    <div class="container grid cols-2">
+      <div>
+        <h2>Contacto</h2>
+        <form
+          action="https://formspree.io/f/xldpadqv?no_redirect=true" method="POST">
+
+        
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" required />
+
+          <label for="email">Correo electrónico</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="message" rows="5" required></textarea>
+
+          <button class="btn" type="submit">Enviar</button>
+        </form>
+
+      </div>
+      <aside class="card">
+        <strong>Departamento de Comunicación Visual</strong>
+        <p>📧 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=comunicacionvisual.cerpsw@gmail.com" 
+       target="_blank" rel="noopener">
+       comunicacionvisual.cerpsw@gmail.com
+</a></p>
+
+        <strong>Mail institucional</strong>
+        <p>📧 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bedeliacerpsw@gmail.com" target="_blank" rel="noopener">
+  bedeliacerpsw@gmail.com
+</a></p>
+        <strong>Canal de Youtube Comunicación Visual Cerp SW</strong>
+        <p>🎥 <a href="https://www.youtube.com/@comunicacionvisualcerpsw" target="_blank" rel="noopener">Click aquí para acceder al canal</a></p>
+        <strong>Web del CeRP del Suroeste</strong>
+        <p>🌐 <a href="https://cerpsw.cfe.edu.uy/" target="_blank" rel="noopener">Click aquí para acceder a la web</a></p>
+        <strong>Web del Festival de Ilustración y Lectura</strong>
+        <p>🌐 <a href="https://www.eacolonia.com/" target="_blank" rel="noopener">Click aquí para acceder a la web</a></p>
+      </aside>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
+      <div>© <span id="year"></span> Convocarte · CeRP Suroeste</div>
+      <div>
+        <a href="#inicio">Volver arriba ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=1"></script>
+</body>
+</html>
